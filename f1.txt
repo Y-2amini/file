@@ -1,0 +1,13 @@
+#include<stdio.h>
+union student{
+	int a;
+	float b;
+};
+int main(){
+	union student s1;
+	s1.a=10;
+	printf("%d\n",s1.a);
+	s1.b=23.7;
+	printf("%.2f\n",s1.b);
+	return 0;
+};
